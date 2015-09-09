@@ -1,0 +1,36 @@
+{
+  "name": "country-codes",
+  "version": "0.0.1",
+  "description": "Lookup country names, ISO-3166-1 alpha2 and alpha3 codes",
+  "main": "index.js",
+  "scripts": {
+    "unit": "node test/index.js | tap-spec",
+    "test": "npm run unit",
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapzen/country-codes.git"
+  },
+  "keywords": [
+    "ISO-3166"
+  ],
+  "author": "Stephen Hess and Julian Simioni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapzen/country-codes/issues"
+  },
+  "homepage": "https://github.com/mapzen/country-codes#readme",
+  "devDependencies": {
+    "jshint": "^2.5.6",
+    "precommit-hook": "^1.0.7",
+    "tap-spec": "^0.2.0",
+    "tape": "^2.13.4"
+  },
+  "pre-commit": [
+      "lint",
+      "validate",
+      "test"
+  ]
+}
