@@ -28,9 +28,14 @@
     "tap-spec": "^0.2.0",
     "tape": "^2.13.4"
   },
+  "dependencies": {
+    "JSONStream": "^1.0.4",
+    "csv-parser": "^1.7.0",
+    "request": "^2.61.0"
+  },
   "pre-commit": [
-      "lint",
-      "validate",
-      "test"
+    "lint",
+    "validate",
+    "test"
   ]
 }
